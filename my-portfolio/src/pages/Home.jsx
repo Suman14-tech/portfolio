@@ -1,33 +1,61 @@
+import "./Home.css";
+
 function Home() {
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial" }}>
-      
-      <h1>Welcome to My Portfolio</h1>
+    <div className="container">
+      {/* HERO */}
+      <section className="hero">
+        <h1>Hi, I’m Suman</h1>
+        <p>React Developer | MCA Student</p>
+        <a href="#projects" className="btn">View Projects</a>
+      </section>
 
-      <p>
-        Hi, I'm Suman 👋
-      </p>
+      {/* ABOUT */}
+      <section className="section">
+        <h2>About Me</h2>
+        <p>
+          I am an MCA student passionate about building responsive and
+          high-performance web applications using React.js and modern
+          JavaScript.
+        </p>
+      </section>
 
-      <p>
-        I am an MCA student and an aspiring software developer.
-        I am learning web development and building projects using
-        Python, Flask, and React.
-      </p>
+      {/* SKILLS */}
+      <section className="section">
+        <h2>Skills</h2>
+        <ul className="skills">
+          <li>React.js</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Python</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </section>
 
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>Smart Personal Finance Advisor</strong> – React, Flask, SQLite
-        </li>
-        <li>
-          <strong>Stock Price Prediction</strong> – Python, LSTM, Machine Learning
-        </li>
-      </ul>
+      {/* PROJECTS */}
+      <section className="section" id="projects">
+        <h2>Projects</h2>
+        <div className="projects">
+          <div className="card">
+            <h3>Personal Portfolio</h3>
+            <p>Responsive portfolio built using React and Vite.</p>
+          </div>
 
-      <h2>Contact</h2>
-      <p>GitHub: https://github.com/your-username</p>
-      <p>LinkedIn: https://linkedin.com/in/your-profile</p>
+          <div className="card">
+            <h3>Python Project</h3>
+            <p>Basic automation and data processing using Python.</p>
+          </div>
+        </div>
+      </section>
 
+      {/* CONTACT */}
+      <section className="section">
+        <h2>Contact</h2>
+        <p>Email: your-email@gmail.com</p>
+        <p>GitHub: github.com/Suman14-tech</p>
+        <p>LinkedIn: linkedin.com/in/your-profile</p>
+      </section>
     </div>
   );
 }
