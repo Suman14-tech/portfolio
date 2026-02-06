@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(90deg, #00d4ff, #0066ff);
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 102, 255, 0.4);
+}

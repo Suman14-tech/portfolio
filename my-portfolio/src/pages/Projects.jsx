@@ -1,21 +1,23 @@
-// src/pages/Projects.jsx
 import React from "react";
+import ProjectCard from "../components/ProjectCard.jsx";
+import "./Pages.css";
 
 function Projects() {
+  const projects = [
+    { title: "Personal Portfolio", description: "Responsive portfolio built using React and Vite." },
+    { title: "Python Project", description: "Basic automation and data processing using Python." },
+    { title: "CodeQuest AI", description: "AI-driven coding interview platform with live evaluation." }
+  ];
+
   return (
-    <div style={{ padding: "50px" }}>
+    <section id="projects" className="section">
       <h2>Projects</h2>
-      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-        <div style={{ border: "1px solid #ddd", padding: "20px", borderRadius: "10px" }}>
-          <h3>Personal Portfolio</h3>
-          <p>Responsive portfolio built using React and Vite.</p>
-        </div>
-        <div style={{ border: "1px solid #ddd", padding: "20px", borderRadius: "10px" }}>
-          <h3>Python Project</h3>
-          <p>Automation and data processing using Python.</p>
-        </div>
+      <div className="projects-grid">
+        {projects.map((proj, index) => (
+          <ProjectCard key={index} title={proj.title} description={proj.description} />
+        ))}
       </div>
-    </div>
+    </section>
   );
 }
 

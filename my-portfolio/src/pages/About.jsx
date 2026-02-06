@@ -1,10 +1,16 @@
-function About() {
-    return (
-        <div>
-            <h1>About Me</h1>
-            <p>Information about you will go here.</p>
+import React from "react";
+import "./Pages.css";
 
-        </div>
-    );
+function About() {
+  return (
+    <section id="about" className="section">
+      <h2>About Me</h2>
+      <p>
+        I am an MCA student passionate about building responsive and
+        high-performance web applications using React.js and modern JavaScript.
+      </p>
+    </section>
+  );
 }
+
 export default About;
