@@ -1,14 +1,17 @@
+// src/components/Navbar.jsx
+import React from "react";
+
 function Navbar() {
-    return (
-        <nav>
-            <h2>My Portfolio</h2>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                 <li>Projects</li>
-                  <li>Contact</li>
-            </ul>
-        </nav>
-    );
+  return (
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  );
 }
+
 export default Navbar;
