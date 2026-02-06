@@ -1,33 +1,26 @@
-body {
+/* FORCE LIGHT MODE */
+html, body {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* Modern professional gradient */
-  background: linear-gradient(135deg, #0f111a, #1f1f2e, #2e2e3f);
-  background-size: 400% 400%;
-  color: #ffffff;
-  animation: gradientBG 15s ease infinite;
+  padding: 0;
+  font-family: Inter, system-ui, sans-serif;
 }
 
-/* Animate the gradient for subtle movement */
-@keyframes gradientBG {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+/* HEADINGS */
+h1, h2, h3 {
+  color: #0f172a;
+  font-weight: 700;
 }
 
-/* Section style */
-.section {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
-  background: rgba(0,0,0,0.3); /* subtle overlay to separate sections */
-  border-radius: 10px;
+/* TEXT */
+p {
+  color: #475569;
+  line-height: 1.6;
 }
 
-/* Home section special style */
-.home-section {
-  text-align: center;
-  padding: 120px 20px;
-  background: rgba(0,0,0,0.4); /* subtle overlay on top of gradient */
-  border-radius: 12px;
+/* LINKS */
+a {
+  color: #2563eb;
+  text-decoration: none;
 }

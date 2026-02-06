@@ -1,16 +1,36 @@
-import React from "react";
-import Button from "../components/Button.jsx";
 import "./Home.css";
 
 function Home() {
   return (
-    <section id="home" className="hero-section">
-      <div className="hero-text">
-        <h1>Hi, I’m Suman</h1>
-        <p>React Developer | MCA Student</p>
-        <Button text="View Projects" href="#projects" />
+    <div className="home">
+      <div className="hero">
+
+        {/* AVATAR */}
+        <div className="avatar">S</div>
+
+        <h1>Hi, I'm <span>Suman</span></h1>
+        <p>MCA Student | React | Python | Aspiring Software Engineer</p>
+
+        <div className="btn-group">
+          <a
+            href="mailto:suman@gmail.com"
+            className="btn primary"
+          >
+            Email Me
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID"
+            target="_blank"
+            rel="noreferrer"
+            className="btn secondary"
+          >
+            LinkedIn
+          </a>
+        </div>
+
       </div>
-    </section>
+    </div>
   );
 }
 
